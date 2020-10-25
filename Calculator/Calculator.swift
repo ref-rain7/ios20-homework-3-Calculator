@@ -29,7 +29,7 @@ class Calculator {
             return "error"
         } else {
             let formatter = NumberFormatter()
-            if abs(val) > pow(10.0, 12) || abs(val) < pow(10.0, -12) {
+            if val != 0, abs(val) > pow(10.0, 12) || abs(val) < pow(10.0, -12) {
                 formatter.numberStyle = .scientific
                 formatter.maximumSignificantDigits = 12
             } else {
